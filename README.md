@@ -1,6 +1,6 @@
 # Smyte
 
-## Credit Card Fraud Prediction
+## Credit Card Fraud Detection
 
 _Hello, World!_
 
