@@ -27,9 +27,9 @@ Specifically, I helped one of their clients to predict which flagged orders thei
 <div style='text-align:center'><img src='Process.gif' /></div>
 
 Simplistically:
-1. When a customer makes a purchase, the order is either __not flagged__ or __flagged__.
-2. If the order is __flagged__, then it goes to the manual review team.
-3. The manual review team then decides whether the order is __not fraudulent__ or __fraudulent__.
+ 1. When a customer makes a purchase, the order is either __not flagged__ or __flagged__.
+ 2. If the order is __flagged__, then it goes to the manual review team.
+ 3. The manual review team then decides whether the order is __not fraudulent__ or __fraudulent__.
 
 ### <a name='benefits'></a> Benefits
 
@@ -75,7 +75,7 @@ I tackled features/feature engineering along roughly 4 vectors:
 
 ### <a name='models'></a> Models
 
-These are the models I tried:
+These are the models I tested:
 - Logistic Regression
 - Random Forest
 - K Nearest Neighbors
