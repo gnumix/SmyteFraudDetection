@@ -1,10 +1,8 @@
-# Smyte
-
-## Credit Card Fraud Detection
+# Smyte Credit Card Fraud Detection
 
 <div style='text-align:center'><img src='CreditCard.jpg' /></div>
 
-### Table of Contents
+## Table of Contents
 
 - [Introduction](#introduction)
 - [Process](#process)
@@ -16,13 +14,13 @@
 - [Next Steps](#next-steps)
 - [Notes](#notes)
 
-### <a name='introduction'></a> Introduction
+## <a name='introduction'></a> Introduction
 
 For my Galvanize Data Science Immersive (DSI) capstone project, I worked with [Smyte](https://www.smyte.com) on credit card fraud detection.
 
 Specifically, I helped one of their clients to predict which flagged orders their manual reviewers would mark as fraudulent.
 
-### <a name='process'></a> Process
+## <a name='process'></a> Process
 
 <div style='text-align:center'><img src='Process.gif' /></div>
 
@@ -31,7 +29,7 @@ Simplistically:
  2. If the order is __flagged__, then it goes to the manual review team.
  3. The manual review team then decides whether the order is __not fraudulent__ or __fraudulent__.
 
-### <a name='benefits'></a> Benefits
+## <a name='benefits'></a> Benefits
 
 I used machine learning to predict which of the __flagged__ orders the manual review team will mark as __fraudulent__.
 - If we can say with high probability that an order is unlikely to be marked as fraudulent by the manual reviewer, then we might as well not send the order over to be reviewed.
@@ -43,7 +41,7 @@ In addition, it turns out that only a small percentage of the _flagged_ orders w
 - And, in fact, several _not fraudulent_ orders (as marked by the manual review team) did go on to receive _chargebacks_.
 - But that's a project for Phase 2. :)
 
-### <a name='imbalanced-classes'></a> Imbalanced Classes
+## <a name='imbalanced-classes'></a> Imbalanced Classes
 
 Since this was a case of imbalanced classes, I tried 3 oversampling techniques:
 - No Oversampling
@@ -52,7 +50,7 @@ Since this was a case of imbalanced classes, I tried 3 oversampling techniques:
 
 __Oversampling__ tended to produce the best results, whereas no oversampling tended to produce the worst results (with regards to recall/precision).
 
-### <a name='metrics'></a> Metrics
+## <a name='metrics'></a> Metrics
 
 To evaluate my models, I looked at the following metrics:
 - Recall
@@ -63,7 +61,7 @@ To evaluate my models, I looked at the following metrics:
 
 __Recall__ was the measure I focused on the most, since I was dealing with fraud: Although the purpose of my project is to cut down on the number of flagged orders a manual reviewer has to investigate, it's still preferable to have a manual reviewer evaluate more reviews, than it is to let an actually fraudulent order slip through (up to a point).
 
-### <a name='feature-engineering'></a> Feature Engineering
+## <a name='feature-engineering'></a> Feature Engineering
 
 I tackled features/feature engineering along roughly 4 vectors:
 - Time
@@ -73,7 +71,7 @@ I tackled features/feature engineering along roughly 4 vectors:
 
 (Please see [Notes](#notes).)
 
-### <a name='models'></a> Models
+## <a name='models'></a> Models
 
 These are the models I tested:
 - Logistic Regression
@@ -85,11 +83,11 @@ These are the models I tested:
 
 __Boosting__ achieved the best results.
 
-### <a name='next-steps'></a> Next Steps
+## <a name='next-steps'></a> Next Steps
 
 - Iterate
 - Deploy!
 
-### <a name='notes'></a> Notes
+## <a name='notes'></a> Notes
 
 Any lack of specifics is due to the fact that I was working with sensitive data and on a sensitive topic.
