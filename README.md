@@ -1,6 +1,6 @@
 # Smyte Credit Card Fraud Detection
 
-<div style='text-align:center'><img src='CreditCard.jpg' /></div>
+<img src='CreditCard.jpg' align='center' />
 
 ## Table of Contents
 
@@ -22,7 +22,7 @@ Specifically, I helped one of their clients to predict which flagged orders thei
 
 ## <a name='process'></a> Process
 
-<div style='text-align:center'><img src='Process.gif' /></div>
+<img src='Process.gif' align='center' />
 
 Simplistically:
  1. When a customer makes a purchase, the order is either __not flagged__ or __flagged__.
