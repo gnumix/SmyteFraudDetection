@@ -34,7 +34,7 @@ Simplistically:
 I used machine learning to predict which of the __flagged__ orders the manual review team will mark as __fraudulent__.
 - If we can say with high probability that an order is unlikely to be marked as fraudulent by the manual reviewer, then we might as well not send the order over to be reviewed.
 - This saves the client both time and money.
-- The insights gained will also help Smyte to refine their rules, which is what they're using to flag orders in the first place.
+- The insights gained will also help Smyte to refine their __rules__, which is what they're using to flag orders in the first place.
 
 In addition, it turns out that only a small percentage of the _flagged_ orders were being marked as _fraudulent_ by the manual review team.
 - One can imagine that, if a reviewer is seeing mostly _not fraudulent_ orders, then s/he may be more likely to mark a _fraudulent_ order as _not fraudulent_.
@@ -48,7 +48,7 @@ Since this was a case of imbalanced classes, I tried 3 oversampling techniques:
 - Oversampling
 - SMOTE (Synthetic Minority Over-sampling Technique)
 
-__Oversampling__ tended to produce the best results, whereas no oversampling tended to produce the worst results (with regards to recall/precision).
+__Oversampling__ tended to produce the best results (with regards to recall/precision).
 
 ## <a name='metrics'></a> Metrics
 
@@ -81,7 +81,7 @@ These are the models I tested:
 - Boosting
 - Neural Network
 
-__Boosting__ achieved the best results.
+__Boosting__ tended to produce the best results (again, with regards to recall/precision).
 
 ## <a name='next-steps'></a> Next Steps
 
@@ -90,4 +90,4 @@ __Boosting__ achieved the best results.
 
 ## <a name='notes'></a> Notes
 
-Any lack of specifics is due to the fact that I was working with sensitive data and on a sensitive topic.
+Any lack of specifics is due to the fact that I was working with sensitive data and on a sensitive topic. Please contact me if you would like more information.
